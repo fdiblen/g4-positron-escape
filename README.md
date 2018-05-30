@@ -37,7 +37,6 @@ chmod +x ./build.sh ./run.sh
 This will download the base geant4 docker image and dockerize (generates a new image) the source code. The new image then can be used to perform simulations.
 
 
-
 #### 1.1.1 Compiling from the source code
 
 ```bash
@@ -46,6 +45,7 @@ mkdir build && cd build
 cmake ..
 make -j4
 ```
+
 
 ### 1.2 Running
 
@@ -67,7 +67,7 @@ The macros (radiactive sources) should be added to **sources** folder. Simulatio
 ```
 This command will perform a simulation for each of the source macros in **job_name/sources** folder. The output of the each simulation will be saved in **job_name/data** folder.
 
-An example can be found in **example-job** folder.
+Examples can be found in **example-jobX** folders.
 
 
 #### 1.2.2 Without Docker
@@ -79,10 +79,13 @@ In this command **macro.mac** includes source definition.
 The executable (positronEscape) can be found **build** directory.
 
 
-
 ## 2. Modifying the source code
 The source code can be found in **code** folder.
 If you need to change the simulation geometry it is defined in **code/src/positronEscapeDetectorConstruction.cc**.
+
+
+## 3. Analysis
+A very simple Python script can be found in **analysis** folder.
 
 
 ## Help

@@ -1,0 +1,125 @@
+# source_30S_2__on_phosphor.mac
+
+# Initialize kernel
+/run/initialize
+
+/gps/particle e+
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/centre 0. 0. 0.00 mm
+/gps/pos/radius   0.001 mm
+/gps/pos/halfz   0.001 mm
+
+/gps/ang/type iso
+/gps/ang/minphi 0 deg
+/gps/ang/maxphi 360 deg
+
+
+#=================================
+
+
+/gps/ene/type User
+/gps/hist/type energy
+/gps/hist/point  0  0
+/gps/hist/point  0.0448384  3.23159
+/gps/hist/point  0.0896768  4.83854
+/gps/hist/point  0.134515  6.23771
+/gps/hist/point  0.179354  7.54335
+/gps/hist/point  0.224192  8.7934
+/gps/hist/point  0.26903  10.0039
+/gps/hist/point  0.313869  11.1821
+/gps/hist/point  0.358707  12.3315
+/gps/hist/point  0.403545  13.4532
+/gps/hist/point  0.448384  14.5475
+/gps/hist/point  0.493222  15.6137
+/gps/hist/point  0.538061  16.6512
+/gps/hist/point  0.582899  17.6588
+/gps/hist/point  0.627737  18.6355
+/gps/hist/point  0.672576  19.5801
+/gps/hist/point  0.717414  20.4916
+/gps/hist/point  0.762253  21.3689
+/gps/hist/point  0.807091  22.2109
+/gps/hist/point  0.851929  23.0168
+/gps/hist/point  0.896768  23.7857
+/gps/hist/point  0.941606  24.5167
+/gps/hist/point  0.986444  25.2092
+/gps/hist/point  1.03128  25.8625
+/gps/hist/point  1.07612  26.4761
+/gps/hist/point  1.12096  27.0494
+/gps/hist/point  1.1658  27.5822
+/gps/hist/point  1.21064  28.074
+/gps/hist/point  1.25547  28.5245
+/gps/hist/point  1.30031  28.9337
+/gps/hist/point  1.34515  29.3014
+/gps/hist/point  1.38999  29.6274
+/gps/hist/point  1.43483  29.9119
+/gps/hist/point  1.47967  30.155
+/gps/hist/point  1.52451  30.3566
+/gps/hist/point  1.56934  30.5172
+/gps/hist/point  1.61418  30.6368
+/gps/hist/point  1.65902  30.7159
+/gps/hist/point  1.70386  30.7548
+/gps/hist/point  1.7487  30.7539
+/gps/hist/point  1.79354  30.7138
+/gps/hist/point  1.83837  30.6348
+/gps/hist/point  1.88321  30.5177
+/gps/hist/point  1.92805  30.3631
+/gps/hist/point  1.97289  30.1717
+/gps/hist/point  2.01773  29.9441
+/gps/hist/point  2.06257  29.6812
+/gps/hist/point  2.1074  29.3838
+/gps/hist/point  2.15224  29.0527
+/gps/hist/point  2.19708  28.689
+/gps/hist/point  2.24192  28.2935
+/gps/hist/point  2.28676  27.8672
+/gps/hist/point  2.3316  27.4112
+/gps/hist/point  2.37643  26.9266
+/gps/hist/point  2.42127  26.4145
+/gps/hist/point  2.46611  25.876
+/gps/hist/point  2.51095  25.3124
+/gps/hist/point  2.55579  24.7249
+/gps/hist/point  2.60063  24.1149
+/gps/hist/point  2.64546  23.4835
+/gps/hist/point  2.6903  22.8322
+/gps/hist/point  2.73514  22.1623
+/gps/hist/point  2.77998  21.4753
+/gps/hist/point  2.82482  20.7727
+/gps/hist/point  2.86966  20.0559
+/gps/hist/point  2.91449  19.3265
+/gps/hist/point  2.95933  18.586
+/gps/hist/point  3.00417  17.8361
+/gps/hist/point  3.04901  17.0783
+/gps/hist/point  3.09385  16.3143
+/gps/hist/point  3.13869  15.5459
+/gps/hist/point  3.18353  14.7747
+/gps/hist/point  3.22836  14.0025
+/gps/hist/point  3.2732  13.2312
+/gps/hist/point  3.31804  12.4624
+/gps/hist/point  3.36288  11.6981
+/gps/hist/point  3.40772  10.9401
+/gps/hist/point  3.45256  10.1904
+/gps/hist/point  3.49739  9.45087
+/gps/hist/point  3.54223  8.72349
+/gps/hist/point  3.58707  8.01027
+/gps/hist/point  3.63191  7.31322
+/gps/hist/point  3.67675  6.63439
+/gps/hist/point  3.72159  5.97586
+/gps/hist/point  3.76642  5.33974
+/gps/hist/point  3.81126  4.72816
+/gps/hist/point  3.8561  4.14328
+/gps/hist/point  3.90094  3.5873
+/gps/hist/point  3.94578  3.06241
+/gps/hist/point  3.99062  2.57086
+/gps/hist/point  4.03545  2.11492
+/gps/hist/point  4.08029  1.69688
+/gps/hist/point  4.12513  1.31905
+/gps/hist/point  4.16997  0.983774
+/gps/hist/point  4.21481  0.693419
+/gps/hist/point  4.25965  0.450375
+/gps/hist/point  4.30448  0.257059
+/gps/hist/point  4.34932  0.115911
+/gps/hist/point  4.39416  0.0293956
+/gps/hist/point  4.439  0
+
+/run/beamOn  100000
+
