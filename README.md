@@ -5,7 +5,16 @@
 
 Geant4 code to perform positron escape simulations.
 
-## Building
+## Building and usage (tested on Linux and OS X)
+
+- Make sure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
+- Clone this repo.
+```bash
+git clone https://github.com/fdiblen/g4-positron-escape.git
+```
+
+
+### Building
 The code has the dependencies listed below.
 
 |   |   |
@@ -15,7 +24,7 @@ The code has the dependencies listed below.
 |  gcc    |   |
 
 
-### Dockerized version (recommended)
+#### Dockerized version (recommended)
 
 Install [Docker](https://docs.docker.com/install/) and run the commands below.
 
@@ -28,7 +37,7 @@ This will download the base geant4 docker image and dockerize (generates a new i
 
 
 
-### Compiling from the source code
+#### Compiling from the source code
 
 ```bash
 cd code
@@ -37,9 +46,9 @@ cmake ..
 make -j4
 ```
 
-## Running
+### Running
 
-### With Docker
+#### With Docker
 If you are using dockerized version:
 - Use the following folder structure:
 
@@ -57,9 +66,9 @@ This command will perform a simulation for each of the source macros in **job_na
 An example can be found in **example-job** folder.
 
 
-### Without Docker
+#### Without Docker
 If you prefer to use the code without Docker, run:
-```
+```bash
 ./positronEscape macro.mac
 ```
 In this command **macro.mac** includes source definition.
