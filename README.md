@@ -8,9 +8,10 @@ Geant4 code to perform positron escape simulations.
 ## Building and usage (tested on Linux and OS X)
 
 - Make sure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
-- Clone this repo.
+- Clone this repo and cd into it.
 ```bash
 git clone https://github.com/fdiblen/g4-positron-escape.git
+cd g4-positron-escape
 ```
 
 
