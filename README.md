@@ -55,6 +55,9 @@ If you are using dockerized version:
    **job_name/sources**
 
    **job_name/data**
+
+The macros (radiactive sources) should be added to **sources** folder. Simulation output will be saved in **data** folder. 
+
 - Create input source macros and save them in a **job_name/sources** folder.
 - Run the command below.
 
