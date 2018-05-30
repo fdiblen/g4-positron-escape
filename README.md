@@ -81,7 +81,6 @@ The executable (positronEscape) can be found **build** directory.
 
 ## 2. Modifying the source code
 The source code can be found in **code** folder.
-If you need to change the simulation geometry it is defined in **code/src/positronEscapeDetectorConstruction.cc**.
 
 
 ## 3. Analysis
