@@ -1,0 +1,17 @@
+# Main macro
+
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfWorkers 4
+
+# Initialize kernel
+/run/initialize
+
+#/gps/verbose 2
+#/control/verbose 2
+#/run/verbose 2
+#/event/verbose 0
+#/tracking/verbose 1
+
+/run/printProgress 50000
+
+
