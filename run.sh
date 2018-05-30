@@ -2,6 +2,10 @@
 
 job_folder=$1
 
+# make sure that the data folder exists
+mkdir -p $(pwd)/${job_folder}/data
+
+# run the application in Docker container
 docker run --net="host" --rm -ti \
 	-v $HOME/.Xauthority:/root/.Xauthority \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
