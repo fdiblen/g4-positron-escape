@@ -5,7 +5,7 @@
 
 Geant4 code to perform positron escape simulations.
 
-## Building and usage (tested on Linux and OS X)
+## 1. Building and usage (tested on Linux and OS X)
 
 - Make sure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
 - Clone this repo and cd into it.
@@ -15,7 +15,7 @@ cd g4-positron-escape
 ```
 
 
-### Building
+### 1.1 Building
 The code has the dependencies listed below.
 
 |   |   |
@@ -25,7 +25,7 @@ The code has the dependencies listed below.
 |  gcc    |   |
 
 
-#### Dockerized version (recommended)
+#### 1.1.1 Dockerized version (recommended)
 
 Install [Docker](https://docs.docker.com/install/) and run the commands below.
 
@@ -38,7 +38,7 @@ This will download the base geant4 docker image and dockerize (generates a new i
 
 
 
-#### Compiling from the source code
+#### 1.1.1 Compiling from the source code
 
 ```bash
 cd code
@@ -47,9 +47,9 @@ cmake ..
 make -j4
 ```
 
-### Running
+### 1.2 Running
 
-#### With Docker
+#### 1.2.1 With Docker
 If you are using dockerized version:
 - Use the following folder structure:
 
@@ -70,7 +70,7 @@ This command will perform a simulation for each of the source macros in **job_na
 An example can be found in **example-job** folder.
 
 
-#### Without Docker
+#### 1.2.2 Without Docker
 If you prefer to use the code without Docker, run:
 ```bash
 ./positronEscape macro.mac
@@ -78,3 +78,12 @@ If you prefer to use the code without Docker, run:
 In this command **macro.mac** includes source definition.
 The executable (positronEscape) can be found **build** directory.
 
+
+
+## 2. Modifying the source code
+The source code can be found in **code** folder.
+If you need to change the simulation geometry it is defined in **code/src/positronEscapeDetectorConstruction.cc**.
+
+
+## Help
+For any issues or requests, please create a ticket at [this link](https://github.com/fdiblen/g4-positron-escape/issues/new).
